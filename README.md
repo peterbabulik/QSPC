@@ -1,9 +1,3 @@
-Based on the new file structure visible in your screenshot, here is the updated `README.md`.
-
-I have added **`DarkSectorAnomalyDetector.ipynb`** to the Project Structure section and added a detailed breakdown of that specific experiment in the **Results** section.
-
-***
-
 # QSPC: Quantum Simulated Particles Collider
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
