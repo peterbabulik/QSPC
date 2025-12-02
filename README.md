@@ -42,16 +42,6 @@ The simulation pipeline consists of four stages:
 3.  **Interaction Engine:** A parameterized unitary evolution that mimics the scattering forces (Strong/Electroweak interactions).
 4.  **Detector (Measurement):** Measures the output probability distribution (Cross-section) and calculates the **Safe-KL Divergence** against real experimental data.
 
-```python
-# Pseudo-code logic
-injection = ParticleInjection(qubits)
-compressed_state = HolographicEncoder(injection)
-scattering_event = InteractionHamiltonian(compressed_state)
-loss = KL_Divergence(scattering_event, atlas_experimental_data)
-loss.backward() # Learn Physics
-```
-
----
 
 ## 📂 Project Structure
 
@@ -63,7 +53,12 @@ QSPC/
 ├── QuantumSimulatedParticleCollider.ipynb    # Core Engine: Z-Boson resonance & ATLAS data anomaly detection.
 ├── Quark_GluonPlasmaPhaseTransition.ipynb    # Thermodynamics: Simulating the early universe & entropy saturation.
 ├── HamiltonianLearning.ipynb                 # Theory Generator: Precision learning of physical constants.
+├── HL_LHC_Predictor.ipynb                    # HL-LHC Predictor: Calibrates the Universe's RAM to predict future suppression factors for HL-LHC collisions.
+├── ProjectSigma5_Simulation.ipynb            # Project Sigma 5: Simulates the computational cutoff in high-energy events, exploring the "Finite Universe" theory.
+├── QSPC_Neutrino_Filter_&_Computational_Mass_Spectrometer.ipynb # Neutrino Filter & Mass Spectrometer: Simulates particle impact signatures and explores the "Particle Zoo" hierarchy.
+├── QSPC_on_Real_IBM_Quantum_Hardware.ipynb   # Digital Twin on IBM Hardware: Trains a Z-Boson Digital Twin model on a simulator and deploys it to real IBM Quantum hardware.
 ├── QuantumGenerativeAIforPhysicsData.ipynb   # Digital Twin: QGAN for compressing collider data.
+├── RealHardwareCollider.ipynb                # Real Hardware Collider: Executes particle collision simulations directly on IBM Quantum hardware to measure cross-sections.
 ├── README.md                                 # Project Documentation.
 └── LICENSE                                   # MIT License.
 ```
@@ -101,6 +96,35 @@ The QSPC framework includes a Quantum Generative Adversarial Network acting as a
 *   **Problem:** Storing exabytes of raw collision data.
 *   **Solution:** We trained a quantum circuit to learn the data distribution.
 *   **Compression:** The physics of the dataset was successfully compressed into **<1KB** of model weights, allowing for on-demand regeneration of the data.
+
+### 7. HL-LHC Predictor (Sigma 5 Extrapolation)
+We calibrated the "Universe's RAM" using ATLAS data to predict future suppression factors at higher energies.
+*   **Calibration:** Discovered Computational Cutoff Parameter (Lambda) = 0.01000.
+*   **Prediction:** Simulating 3 TeV collisions (HL-LHC) yielded a suppression ratio of **0.775**.
+*   **Prediction:** Simulating 4 TeV collisions yielded a suppression ratio of **0.717**.
+
+### 8. Project Sigma 5: Finite Universe Simulation
+We simulated the "Computational Cutoff" theory by mapping energy levels to quantum circuit depth on real IBM hardware.
+*   **Method:** Performed an "Energy Sweep" (Circuit Depth 1-15) on the IBM Fez/Torino backend.
+*   **Result:** Observed signal suppression at higher depths, consistent with the hypothesis that the universe has a finite computational limit (Babulik Inversion).
+
+### 9. Neutrino Filter & Mass Spectrometer
+We simulated the "Particle Zoo" hierarchy by toggling control qubits to represent different particle types.
+*   **Neutrino Mode (Key=0):** Showed **NO entanglement**, consistent with weakly interacting particles.
+*   **Electron Mode (Key=1):** Showed **HIGH entanglement**, consistent with charged particle interactions.
+*   **Conclusion:** Validated the ability to toggle particle physics properties via quantum control logic.
+
+### 10. Digital Twin on Real IBM Hardware
+We trained a Z-Boson generative model on a simulator and successfully deployed it to a real quantum processor.
+*   **Training:** Optimized a PennyLane model to reproduce the Z-Boson resonance peak.
+*   **Deployment:** Converted the model to Qiskit and executed it on **IBM Fez**.
+*   **Validation:** The real hardware output successfully reconstructed the Z-Boson resonance peak, validating the "Digital Twin" concept.
+
+### 11. Real Hardware Collider
+We executed direct particle collision simulations on IBM Quantum hardware to measure interaction cross-sections.
+*   **Neutrino-Neutrino:** Measured Cross-Section = **0.0345** (Low interaction).
+*   **Neutrino-Electron:** Measured Cross-Section = **0.0465**.
+*   **Electron-Electron:** Measured Cross-Section = **0.9247** (High interaction).
 
 ---
 
